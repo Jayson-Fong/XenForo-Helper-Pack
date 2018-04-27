@@ -12,4 +12,13 @@ class jayson_helperPack_Helpers_Id
                 }
                 return $username;
         }
+        public static function helperGetUser($id)
+        {
+                $user = [];
+                if ($id > 0)
+                {
+                        $user = XenForo_Model::create('XenForo_Model_User')->getUserById($id);
+                }
+                return $user;
+        }
 }
