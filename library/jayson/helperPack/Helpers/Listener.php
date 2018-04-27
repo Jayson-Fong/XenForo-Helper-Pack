@@ -5,7 +5,8 @@ class jayson_helperPack_Helpers_listener
                 XenForo_Template_Helper_Core::$helperCallbacks += array(
                         'getidbynameoremail' => array('jayson_helperPack_Helpers_NameEmail', 'helperGetId'),
                         'getnamebyid' => array('jayson_helperPack_Helpers_Id', 'helperGetName'),
-                        'getuserbynameoremail' => array('jayson_helperPack_Helpers_NameEmail', 'helperGetUser')
+                        'getuserbynameoremail' => array('jayson_helperPack_Helpers_NameEmail', 'helperGetUser'),
+                        'getuserbyid' => array('jayson_helperPack_Helpers_Id', 'helperGetUser')
                 );
         }
 }
